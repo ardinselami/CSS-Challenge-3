@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 45px;
+}
+.line-height {
+  line-height: 1.5;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.text-white {
+  color: white;
+}
+.text-red {
+  color: #ff4500;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-dark {
+  background-color: #333;
+}
+.bg-light-grey {
+  background-color: #f4f4f4;
+}
+.bg-success {
+  background-color: #5cb85c;
+}
+.bg-red {
+  background-color: #632323;
+}
+
+svg {
+  fill: white;
+}
+
+/* ------------- Navbar -------------- */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: none; /* hidden on mobile */
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+/* --------------- Hero ---------------*/
+.hero {
+  background: url("./images/image-01.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+/* --------------- About us ------------ */
+.aboutus {
+  padding: 50px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 10px 10px 12px rgba(69, 54, 54, 0.4);
+}
+
+.about-text {
+  text-align: center;
+}
+/* -------------- Services ------------------- */
+.services,
+.instructors,
+.pricing {
+  padding: 80px 0;
+}
+.services h2,
+.instructors h2 {
+  margin-bottom: 30px;
+}
+.services button {
+  border: 1px solid white;
+  padding: 20px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.services button:hover {
+  color: #632323;
+  background-color: white;
+}
+.services .card {
+  padding: 30px;
+}
+.services .card p {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* ----------- Instructors ------------ */
+
+.instructor-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.instructor-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 10px 16px;
+}
+
+.instructor-card img {
+  width: 100%;
+  display: block;
+}
+
+.instructor-card h3 {
+  margin: 20px 0;
+}
+
+.instructor-card p {
+  margin: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* -------------- Pricing ---------------- */
+.card-container,
+.price-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card,
+.price-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-bottom: 16px;
+}
+.price-card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.price-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.price-card .price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.price-card .details {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.price-card .details li {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.price-card .details li:first-child {
+  border-top: none;
+}
+/* ---------- Contact ----------- */
+h2 {
+  margin-bottom: 1.5em;
+}
+
+/* Form and Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical; /* Allows vertical resize for textarea */
+}
+
+button[type="submit"] {
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4cae4c; /* A shade darker on hover */
+}
+/* ------------- Contact ------------- */
+.contact {
+  padding: 30px 0;
+}
+/* ----------- Footer -------------- */
+footer {
+  padding: 20px 0;
+}
+
+/* ------------------- Media Query for Tablets and Larger -------------------  */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+  .menu ul {
+    display: block;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-image {
+    width: 45%;
+  }
+
+  .about-text {
+    width: 50%;
+    text-align: left;
+  }
+  .card-container,
+  .price-card-container {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .card,
+  .price-card,
+  .instructor-card {
+    flex-basis: 33.333%;
+    margin: 0 10px;
+  }
+
+  .card-container,
+  .instructor-grid,
+  .price-card-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .contact form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  input[type="text"],
+  input[type="email"] {
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    margin-bottom: 20px;
+  }
+}
